@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --transparency: 0.7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../public/fonts/Gotham-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: linear-gradient(
+      135deg,
+      rgba(17, 30, 62, var(--transparency)),
+      rgba(17, 30, 62, var(--transparency)),
+      rgba(2, 13, 32, var(--transparency))
+    ),
+    url("../../public/images/7c09640324de5127b79e9be39ddf4e5a.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.titleA {
+  font-family: "Gotham";
+  background: linear-gradient(90deg, #006aff 0%, #00f9ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.inputA {
+  background: #ffffff;
+  box-shadow: 0px 1.82941px 3.65882px rgba(0, 0, 0, 0.05);
+  border-radius: 18292.3px;
+  color: #006fee;
+}
+
+.buttonA {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 96, 255, 0.8) 0%,
+    rgba(0, 255, 231, 0.8) 100%
+  );
+  border: 1.3px solid #ffffff;
+  border-radius: 10.4px;
+  
+}
+
+.blockA {
+  background: linear-gradient(90deg, #3f495f 0%, #0e1934 74%);
+  border-radius: 7px;
+}
