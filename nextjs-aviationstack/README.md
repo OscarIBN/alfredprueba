@@ -15,3 +15,11 @@ bun dev
 ```
 
 Abrir [http://localhost:3000](http://localhost:3000) 
+
+## Notas
+* El Api de aviationstack no permite usar el search gratuitamente por eso no se incluye
+* Se usa un googlemaps embebido para latitud y longitud
+* Se usa zustand
+* Es responsivo
+* Botones con efecto
+* Usa axios
